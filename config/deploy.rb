@@ -1,6 +1,8 @@
 require "bundler/capistrano"
 
-server "vagrant.dev", :web, :app, :db, primary: true
+# server "192.168.101.101", :web, :app, :db, primary: true
+server "127.0.0.1", :web, :app, :db, primary: true
+set :port, 2222
 
 set :application, "blog"
 set :user, "vagrant"
